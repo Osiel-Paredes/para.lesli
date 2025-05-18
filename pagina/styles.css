@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ead8fe;
+    color: #333;
+    line-height: 1.6;
+}
+
+.cursive {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h1, h2, h3 {
+    color: #d23669;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.romantic-img {
+    width: 300px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 5px 15px rgba(210, 54, 105, 0.2);
+}
+
+.gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.heart {
+    font-size: 3em;
+    margin: 20px;
+    animation: latido 1.5s infinite;
+}
+
+.buttons {
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 25px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin: 0 10px;
+}
+
+#siBtn {
+    background-color: #d23669;
+    color: white;
+}
+
+#noBtn {
+    background-color: #f8a5c2;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+@keyframes latido {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+    75% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Efecto de confeti (para la página "SÍ") */
+@keyframes confeti {
+    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
+}
+
+.confeti {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: #f00;
+    animation: confeti 5s linear forwards;
+}
+
+#pregunta {
+    position: relative;  /* Asegura que el botón "No" se mueva dentro de esta sección */
+    min-height: 50vh;   /* Altura mínima para que el botón tenga espacio para moverse */
+    overflow: hidden;   /* Opcional: Evita que el botón se salga visualmente */
+}
+
+/* Estilo para textos románticos */
+#perfecta p, #artistas p {
+    font-size: 1.5em;
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+/* Destacar palabras clave */
+span {
+    font-weight: bold;
+}
+
+/* Fondo con textura de papel y bordes decorativos */
+body {
+    background-color: #fff9f9;
+    background-image: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border: 10px solid transparent;
+    border-image: url('https://www.transparenttextures.com/patterns/vintage-speckles.png') 20 round;
+    box-shadow: 0 0 20px
+    rgba(210, 54, 105, 0.1);
+}
+
+.reasons-list li {
+    position: relative;
+    padding-left: 30px;
+}
+.reasons-list li::before {
+    content: "❤️ ";
+    position: absolute;
+    left: 0;
+    color: #d23669;
+}
+
+
+/* En tu CSS */
+.cursive {
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.folded-letter {
+  background: #fff9f9;
+  padding: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #f3d1dc;
+  box-shadow: 0 5px 15px rgba(210, 54, 105, 0.1);
+  position: relative;
+}
+
+.promise-container {
+  background: white;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.promise-list {
+  text-align: left;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+.promise-list li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.promise-list li::before {
+  content: "❤";
+  color: #d23669;
+  position: absolute;
+  left: -20px;
+}
+
+.signature {
+  text-align: right;
+  font-size: 1.2em;
+  margin-top: 30px;
+}
+
+.signature-name {
+  display: block;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em;
+  color: #d23669;
+  margin-top: 10px;
+}
+
+/* Timeline estilo carta de amor */
+#nuestra-historia {
+  background: url('https://www.transparenttextures.com/patterns/cream-paper.png');
+  padding: 40px 20px;
+}
+
+.timeline-moment {
+  position: relative;
+  margin-bottom: 50px;
+  padding-left: 100px;
+}
+
+.timeline-moment::before {
+  content: "";
+  position: absolute;
+  left: 50px;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: linear-gradient(to bottom, #f8a5c2, #d23669);
+}
+
+.date {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 90px;
+  text-align: center;
+  background: #d23669;
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.history-img {
+  border-radius: 10px;
+  margin: 15px 0;
+  box-shadow: 0 5px 15px rgba(210, 54, 105, 0.2);
+  max-width: 300px;
+  border: 5px solid white;
+}
+
+.gallery {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Efecto polaroid en fotos */
+.history-img {
+  background: white;
+  padding: 10px 10px 20px;
+  transform: rotate(-2deg);
+  transition: all 0.3s;
+}
+
+.history-img:hover {
+  transform: rotate(0) scale(1.05);
+}
+
+/* Animación de carta */
+#carta-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 245, 245, 0.95);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.carta-cerrada {
+  text-align: center;
+  animation: palpitar 2s infinite;
+}
+
+.carta-cerrada img {
+  width: 100px;
+  filter: drop-shadow(0 0 10px rgba(210, 54, 105, 0.5));
+}
+
+.carta-abierta {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@keyframes palpitar {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.carta-abierta {
+  animation: abrirCarta 1.5s forwards;
+}
+
+@keyframes abrirCarta {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
